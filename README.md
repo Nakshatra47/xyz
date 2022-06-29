@@ -1,3 +1,3 @@
 # xyz
 A fun typing game
-Play here :- 
+Play here :- https://nakshatra47.github.io/xyz/
