@@ -16,7 +16,7 @@ const ans = [
   
 let time = currentLevel;
 let score = 0;
-let isPlaying;
+let isPlaying=false;
 let idx;
 // DOM Elements
 const wordInput = document.querySelector('#word-input');
@@ -60,7 +60,7 @@ const words = [
     seconds.innerHTML = currentLevel;
     document.getElementById('current').innerHTML='Press enter key to start';
     wordInput.addEventListener('keypress', function (e) {
-      if (e.key === 'Enter' ) {
+      if (e.key === 'Enter' &&  isPlaying===false ) {
         scoreDisplay.innerHTML = score;
         isPlaying = true;
         message.innerHTML = '';
@@ -146,15 +146,7 @@ const words = [
       score = 0;
 
        document.getElementById('current').innerHTML='Press enter key to play again';
-  //   wordInput.addEventListener('keypress', function (e) {
-  //     if (e.key === 'Enter' && time===0) {
-  //       isPlaying = true;
-  //       message.innerHTML = '';
-  //       scoreDisplay.innerHTML = score;
-  //     time = currentLevel + 1;
-  //     showWord(words);
-  //     }
-  // });
+ 
     }
   }
   
