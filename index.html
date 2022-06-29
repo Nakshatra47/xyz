@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>WordBeater</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style2.css">
+
+</head>
+
+<body>
+  <header class="banner">
+    <h1 id="tit">WordBeater</h1>
+  </header>
+  <section>
+    <div class="typ">
+      <p class="txt">Type the word given below in <span class="text-success" id="seconds">5</span>
+        seconds</p>
+      <h1 class="display-2 mb-5" id="current">hello</h1>
+      <input type="text" class="form" placeholder="Start typing..." id="word-input" autofocus>
+      <h5 class="msg" id="message"></h5>
+    </div>
+    <!-- Time & Score Columns -->
+    <div class="rest">
+      <div class="col-md-6">
+        <h3 class ="st">Time Left :
+          <span id="time">0</span>
+        </h3>
+      </div>
+      <div class="col-md-6">
+        <h3 class="st">Score :
+          <span id="score">0</span>
+        </h3>
+      </div>
+      <br>
+      <div class="col">
+        <h3>High Score :
+          <span id="highscore">0</span>
+        </h3>
+      </div>
+    </div>
+
+
+  </section>
+
+  <!-- Instructions -->
+  <div class="ftr">
+    <div class="col-md-12">
+      <div class="card card-body bg-secondary text-white">
+        <h3 class="inst">Instructions</h3>
+          <p>Type each word in the given amount of seconds to score. To play again, just type the current word. Your
+            score
+            will reset</p>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <script src="main.js"></script>
+
+</body>
+
+
+</html>
